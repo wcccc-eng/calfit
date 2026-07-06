@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalFit | &#x9762;&#x5411; Android&#x3001;iOS &#x4E0E;&#x9E3F;&#x8499;&#x7684; AI &#x70ED;&#x91CF;&#x8BB0;&#x5F55;&#x4F53;&#x9A8C;</title>
+  <meta
+    name="description"
+    content="CalFit &#x662F;&#x4E00;&#x6B3E;&#x9762;&#x5411;&#x51CF;&#x8102;&#x4E0E;&#x589E;&#x808C;&#x7528;&#x6237;&#x7684; AI &#x70ED;&#x91CF;&#x8BB0;&#x5F55;&#x5E94;&#x7528;&#x3002;&#x4EE5;&#x4E00;&#x5957;&#x6838;&#x5FC3;&#x4F53;&#x9A8C;&#x8986;&#x76D6; Android&#x3001;iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA&#x3002;"
+  />
+  <meta
+    name="keywords"
+    content="CalFit, AI &#x70ED;&#x91CF;&#x8BB0;&#x5F55;, &#x62CD;&#x7167;&#x8BC6;&#x522B;&#x98DF;&#x7269;, &#x70ED;&#x91CF;&#x8BA1;&#x7B97; App, Android, iOS, &#x9E3F;&#x8499;, HarmonyOS, PWA, &#x672C;&#x5730;&#x5B58;&#x50A8;"
+  />
+  <meta property="og:title" content="CalFit | &#x9762;&#x5411; Android&#x3001;iOS &#x4E0E;&#x9E3F;&#x8499;&#x7684; AI &#x70ED;&#x91CF;&#x8BB0;&#x5F55;&#x4F53;&#x9A8C;" />
+  <meta
+    property="og:description"
+    content="&#x62CD;&#x4E0B;&#x8FD9;&#x4E00;&#x9910;&#xFF0C;&#x91CD;&#x70B9;&#x4F1A;&#x81EA;&#x5DF1;&#x7559;&#x4E0B;&#x3002;&#x4E00;&#x5957;&#x6807;&#x51C6;&#x4F53;&#x9A8C;&#x8986;&#x76D6; Android&#x3001;iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA&#x3002;"
+  />
+  <meta property="og:image" content="logo-mark.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CalFit" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CalFit | &#x9762;&#x5411; Android&#x3001;iOS &#x4E0E;&#x9E3F;&#x8499;&#x7684; AI &#x70ED;&#x91CF;&#x8BB0;&#x5F55;&#x4F53;&#x9A8C;" />
+  <meta
+    name="twitter:description"
+    content="AI &#x8BC6;&#x522B;&#x98DF;&#x7269;&#x4E0E;&#x70ED;&#x91CF;&#xFF0C;&#x4EE5;&#x7EDF;&#x4E00;&#x4F53;&#x9A8C;&#x8986;&#x76D6; Android&#x3001;iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA&#x3002;"
+  />
+  <meta name="theme-color" content="#f3f2ef" />
+  <link rel="icon" href="logo-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="calfit.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CalFit",
+    "operatingSystem": "Android, iOS, HarmonyOS, Web",
+    "applicationCategory": "HealthApplication",
+    "description": "CalFit is an AI calorie tracking app that identifies food from a photo and suggests daily calorie intake.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CNY"
+    }
+  }
+  </script>
+</head>
+<body class="site-page">
+  <a class="skip-link" href="#main-content">&#x8DF3;&#x5230;&#x6B63;&#x6587;</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="&#x4E3B;&#x5BFC;&#x822A;">
+      <a class="brand" href="#top" aria-label="CalFit &#x9996;&#x9875;">
+        <img class="brand-mark" src="logo-mark.svg" alt="" width="32" height="32" />
+        <span class="brand-name">CalFit</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#platforms">&#x5E73;&#x53F0;</a>
+        <a href="#experience">&#x4F53;&#x9A8C;</a>
+        <a href="#planning">&#x76EE;&#x6807;</a>
+        <a href="#privacy">&#x9690;&#x79C1;</a>
+        <a href="#download">&#x4E0B;&#x8F7D;</a>
+      </div>
+
+      <a class="nav-cta" href="#download">&#x67E5;&#x770B;&#x8FDB;&#x5EA6;</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-copy" data-reveal="hero-copy" style="--reveal-delay: 40ms;">
+        <p class="eyebrow">CalFit Across Platforms</p>
+        <h1>&#x62CD;&#x4E0B;&#x8FD9;&#x4E00;&#x9910;&#x3002;<br />&#x91CD;&#x70B9;&#x4F1A;&#x81EA;&#x5DF1;&#x7559;&#x4E0B;&#x3002;</h1>
+        <p class="lede">
+          CalFit &#x7528; AI &#x8BC6;&#x522B;&#x98DF;&#x7269;&#x3001;&#x4F30;&#x7B97;&#x70ED;&#x91CF;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x76EE;&#x6807;&#x4F53;&#x91CD;&#x751F;&#x6210;&#x6BCF;&#x65E5;&#x6444;&#x5165;&#x5EFA;&#x8BAE;&#x3002;
+          &#x5B83;&#x4E0D;&#x53EA;&#x9762;&#x5411; Android&#xFF0C;&#x800C;&#x662F;&#x6309;&#x201C;&#x4E00;&#x5957;&#x6838;&#x5FC3;&#x4F53;&#x9A8C;&#xFF0C;&#x591A;&#x7AEF;&#x4E00;&#x81F4;&#x201D;&#x7684;&#x65B9;&#x5411;&#x63A8;&#x8FDB;&#x3002;
+        </p>
+
+        <div class="cta-group">
+          <a class="button button-primary" href="#download">&#x5B89;&#x88C5;&#x5305;&#x7A0D;&#x540E;&#x63A5;&#x5165;</a>
+          <a class="button button-secondary" href="#experience">&#x67E5;&#x770B;&#x4EA7;&#x54C1;&#x4F53;&#x9A8C;</a>
+        </div>
+
+        <p class="hero-caption">
+          &#x5F53;&#x524D;&#x4F18;&#x5148;&#x628A;&#x5B98;&#x7F51;&#x7684;&#x89C6;&#x89C9;&#x3001;&#x5C42;&#x7EA7;&#x4E0E;&#x54C1;&#x724C;&#x8868;&#x8FBE;&#x6253;&#x78E8;&#x5230;&#x4F4D;&#xFF0C;&#x540C;&#x65F6;&#x628A;&#x4EA7;&#x54C1;&#x65B9;&#x5411;&#x4ECE; Android &#x62C9;&#x5411; iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA &#x7684;&#x591A;&#x5E73;&#x53F0;&#x4F53;&#x9A8C;&#x3002;
+        </p>
+
+        <ul class="hero-notes" aria-label="&#x4EA7;&#x54C1;&#x7279;&#x70B9;">
+          <li>Android / iOS / HarmonyOS / PWA</li>
+          <li>AI &#x8BC6;&#x522B;&#x98DF;&#x7269;&#x4E0E;&#x70ED;&#x91CF;</li>
+          <li>&#x672C;&#x5730;&#x5B58;&#x50A8;&#x4F18;&#x5148;</li>
+        </ul>
+      </div>
+
+      <div class="hero-stage" aria-hidden="true" data-reveal="hero-stage" style="--reveal-delay: 140ms;">
+        <div class="ambient ambient-left"></div>
+        <div class="ambient ambient-right"></div>
+
+        <div class="floating-chip chip-top">&#x8BC6;&#x522B;&#x5B8C;&#x6210; / 3 items</div>
+        <div class="floating-chip chip-bottom">Local first / No account required</div>
+
+        <div class="phone-shell">
+          <div class="phone-header">
+            <span class="phone-dot"></span>
+            <span class="phone-title">Today</span>
+            <span class="phone-badge">Goal 71%</span>
+          </div>
+
+          <div class="phone-summary">
+            <div>
+              <p class="summary-label">&#x4ECA;&#x65E5;&#x5269;&#x4F59;</p>
+              <p class="summary-value">640 kcal</p>
+            </div>
+            <div class="summary-graph">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="muted"></span>
+              <span class="muted"></span>
+            </div>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-block-head">
+              <span>&#x5348;&#x9910; / Lunch</span>
+              <strong>560 kcal</strong>
+            </div>
+
+            <div class="meal-row">
+              <div>
+                <strong>&#x9E21;&#x80F8;&#x8089;</strong>
+                <span>Chicken Breast</span>
+              </div>
+              <b>230</b>
+            </div>
+
+            <div class="meal-row">
+              <div>
+                <strong>&#x6E05;&#x7092;&#x65F6;&#x852C;</strong>
+                <span>Greens</span>
+              </div>
+              <b>80</b>
+            </div>
+
+            <div class="meal-row">
+              <div>
+                <strong>&#x7C73;&#x996D;</strong>
+                <span>Rice</span>
+              </div>
+              <b>250</b>
+            </div>
+          </div>
+
+          <div class="capture-panel">
+            <div class="capture-photo">
+              <span class="capture-tag capture-tag-top">&#x9E21;&#x80F8;&#x8089; / 230</span>
+              <span class="capture-tag capture-tag-right">&#x7C73;&#x996D; / 250</span>
+              <span class="capture-tag capture-tag-bottom">&#x65F6;&#x852C; / 80</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform-section" id="platforms" data-reveal="platforms" style="--reveal-delay: 60ms;">
+      <div class="platform-copy">
+        <p class="section-kicker">Platforms</p>
+        <h2>&#x4E00;&#x5957;&#x4F53;&#x9A8C;&#xFF0C;&#x5411;&#x6240;&#x6709;&#x4E3B;&#x6D41;&#x7CFB;&#x7EDF;&#x5EF6;&#x5C55;&#x3002;</h2>
+        <p>
+          &#x4EA7;&#x54C1;&#x4E0D;&#x518D;&#x53EA;&#x4EE5; Android &#x4E3A;&#x4E2D;&#x5FC3;&#x3002;CalFit &#x4F1A;&#x7528;&#x540C;&#x4E00;&#x5957;&#x6838;&#x5FC3;&#x4EA4;&#x4E92;&#x903B;&#x8F91;&#xFF0C;
+          &#x9010;&#x6B65;&#x8986;&#x76D6; Android&#x3001;iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA&#xFF0C;&#x8BA9;&#x6570;&#x636E;&#x3001;&#x89C6;&#x89C9;&#x4E0E;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;
+        </p>
+      </div>
+
+      <div class="platform-grid" aria-label="&#x5E73;&#x53F0;&#x9002;&#x914D;&#x72B6;&#x6001;">
+        <article class="platform-card platform-card-live">
+          <span class="platform-state">&#x5F53;&#x524D;&#x57FA;&#x7840;</span>
+          <h3>Android</h3>
+          <p>Capacitor &#x5DE5;&#x7A0B;&#x5DF2;&#x5728;&#x5F53;&#x524D;&#x4ED3;&#x5E93;&#x4E2D;&#x5EFA;&#x7ACB;&#xFF0C;&#x662F;&#x73B0;&#x5728;&#x7684;&#x4E3B;&#x4EA4;&#x4ED8;&#x8DEF;&#x7EBF;&#x3002;</p>
+        </article>
+        <article class="platform-card">
+          <span class="platform-state">&#x5DF2;&#x7EB3;&#x5165;&#x65B9;&#x5411;</span>
+          <h3>iOS</h3>
+          <p>&#x5DE5;&#x7A0B;&#x7ED3;&#x6784;&#x5DF2;&#x5F80; Capacitor iOS &#x65B9;&#x5411;&#x5BF9;&#x9F50;&#xFF0C;&#x540E;&#x7EED;&#x53EF;&#x63A5;&#x5165; iPhone &#x4E0E; iPad &#x539F;&#x751F;&#x6253;&#x5305;&#x3002;</p>
+        </article>
+        <article class="platform-card">
+          <span class="platform-state">&#x8DE8;&#x7AEF;&#x9002;&#x914D;</span>
+          <h3>HarmonyOS</h3>
+          <p>&#x4EE5; Web/PWA &#x4F53;&#x9A8C;&#x4E3A;&#x57FA;&#x5E95;&#xFF0C;&#x5411;&#x9E3F;&#x8499;&#x8BBE;&#x5907;&#x63A8;&#x8FDB;&#x89C6;&#x89C9;&#x4E0E;&#x4EA4;&#x4E92;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
+        </article>
+        <article class="platform-card">
+          <span class="platform-state">&#x5168;&#x5C40;&#x515C;&#x5E95;</span>
+          <h3>PWA / Web</h3>
+          <p>&#x4FDD;&#x6301;&#x4EFB;&#x4F55;&#x7CFB;&#x7EDF;&#x90FD;&#x80FD;&#x8BBF;&#x95EE;&#x4E0E;&#x4F53;&#x9A8C;&#x6838;&#x5FC3;&#x80FD;&#x529B;&#xFF0C;&#x662F;&#x6574;&#x4E2A;&#x591A;&#x5E73;&#x53F0;&#x7684;&#x5E95;&#x5EA7;&#x3002;</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="&#x6838;&#x5FC3;&#x80FD;&#x529B;" data-reveal="metrics" style="--reveal-delay: 80ms;">
+      <div>
+        <span>4</span>
+        <p>Android&#x3001;iOS&#x3001;&#x9E3F;&#x8499;&#x4E0E; PWA &#x7684;&#x7EDF;&#x4E00;&#x65B9;&#x5411;</p>
+      </div>
+      <div>
+        <span>1</span>
+        <p>&#x4E00;&#x5957;&#x6838;&#x5FC3;&#x4F53;&#x9A8C;&#xFF0C;&#x7A7F;&#x900F;&#x591A;&#x7AEF;</p>
+      </div>
+      <div>
+        <span>0</span>
+        <p>&#x6CA1;&#x6709;&#x5E73;&#x53F0;&#x5272;&#x88C2;&#x611F;&#xFF0C;&#x4E0D;&#x628A;&#x4F53;&#x9A8C;&#x505A;&#x6210;&#x591A;&#x4E2A;&#x7248;&#x672C;</p>
+      </div>
+      <div>
+        <span>100%</span>
+        <p>&#x6570;&#x636E;&#x903B;&#x8F91;&#x3001;&#x8BB0;&#x5F55;&#x65B9;&#x5F0F;&#x4E0E;&#x54C1;&#x724C;&#x6C14;&#x8D28;&#x6309;&#x591A;&#x7AEF;&#x7EDF;&#x4E00;&#x63A8;&#x8FDB;</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="experience">
+      <div class="story-copy" data-reveal="copy">
+        <p class="section-kicker">Capture</p>
+        <h2>&#x4ECE;&#x76F8;&#x673A;&#x5F00;&#x59CB;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4ECE;&#x8868;&#x5355;&#x5F00;&#x59CB;&#x3002;</h2>
+        <p>
+          &#x4F60;&#x5148;&#x62CD;&#xFF0C;CalFit &#x518D;&#x628A;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x6574;&#x7406;&#x6210;&#x6E05;&#x695A;&#x7684;&#x9910;&#x6B21;&#x4E0E;&#x70ED;&#x91CF;&#x5173;&#x7CFB;&#x3002;
+          &#x8BB0;&#x5F55;&#x52A8;&#x4F5C;&#x88AB;&#x538B;&#x7F29;&#x5230;&#x6700;&#x77ED;&#xFF0C;&#x5224;&#x65AD;&#x548C;&#x8C03;&#x6574;&#x4ECD;&#x7136;&#x7559;&#x7ED9;&#x4F60;&#x81EA;&#x5DF1;&#x3002;
+        </p>
+      </div>
+
+      <div class="story-panel panel-annotation" aria-hidden="true" data-reveal="panel" style="--reveal-delay: 120ms;">
+        <div class="annotation-card">
+          <p>&#x8BC6;&#x522B;&#x5B8C;&#x6210;</p>
+          <strong>3 &#x9879;&#x5DF2;&#x5F52;&#x7C7B;</strong>
+          <span>&#x4E00;&#x952E;&#x5199;&#x5165;&#x5348;&#x9910;&#xFF0C;&#x65E0;&#x9700;&#x9010;&#x6761;&#x5F55;&#x5165;&#x3002;</span>
+        </div>
+        <div class="annotation-lines"></div>
+      </div>
+    </section>
+
+    <section class="story-section story-section-reverse" id="planning">
+      <div class="story-copy" data-reveal="copy">
+        <p class="section-kicker">Planning</p>
+        <h2>&#x76EE;&#x6807;&#x4E0D;&#x662F;&#x6A21;&#x677F;&#xFF0C;&#x800C;&#x662F;&#x4F60;&#x7684;&#x8EAB;&#x4F53;&#x6570;&#x636E;&#x3002;</h2>
+        <p>
+          CalFit &#x4F1A;&#x6839;&#x636E;&#x5E74;&#x9F84;&#x3001;&#x8EAB;&#x9AD8;&#x3001;&#x4F53;&#x91CD;&#x3001;&#x6D3B;&#x52A8;&#x6C34;&#x5E73;&#x4E0E;&#x76EE;&#x6807;&#x4F53;&#x91CD;&#x8BA1;&#x7B97;&#x6BCF;&#x65E5;&#x6444;&#x5165;&#x9884;&#x7B97;&#xFF0C;
+          &#x8BA9;&#x6BCF;&#x4E00;&#x6B21;&#x8BB0;&#x5F55;&#x90FD;&#x80FD;&#x56DE;&#x5230;&#x4E00;&#x4E2A;&#x771F;&#x5B9E;&#x800C;&#x957F;&#x671F;&#x7684;&#x76EE;&#x6807;&#x4E0A;&#x3002;
+        </p>
+      </div>
+
+      <div class="story-panel panel-planning" aria-hidden="true" data-reveal="panel" style="--reveal-delay: 120ms;">
+        <div class="goal-card">
+          <p>Daily Goal</p>
+          <strong>2,250 kcal</strong>
+          <span>&#x51CF;&#x8102; &#xB7; &#x4E2D;&#x7B49;&#x6D3B;&#x52A8;&#x5F3A;&#x5EA6;</span>
+        </div>
+        <div class="goal-steps">
+          <div>
+            <small>&#x8F93;&#x5165;&#x6863;&#x6848;</small>
+            <b>&#x8EAB;&#x9AD8; / &#x4F53;&#x91CD; / &#x76EE;&#x6807;&#x4F53;&#x91CD;</b>
+          </div>
+          <div>
+            <small>&#x81EA;&#x52A8;&#x8BA1;&#x7B97;</small>
+            <b>BMR + Activity + Goal</b>
+          </div>
+          <div>
+            <small>&#x6301;&#x7EED;&#x53CD;&#x9988;</small>
+            <b>&#x5DF2;&#x6444;&#x5165; / &#x5269;&#x4F59;&#x70ED;&#x91CF;</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="privacy">
+      <div class="story-copy" data-reveal="copy">
+        <p class="section-kicker">Privacy</p>
+        <h2>&#x9ED8;&#x8BA4;&#x4E0D;&#x662F;&#x5206;&#x4EAB;&#xFF0C;&#x800C;&#x662F;&#x9ED8;&#x8BA4;&#x5B89;&#x9759;&#x3002;</h2>
+        <p>
+          &#x6CA1;&#x6709;&#x793E;&#x4EA4;&#x52A8;&#x6001;&#xFF0C;&#x6CA1;&#x6709;&#x516C;&#x5F00;&#x4E3B;&#x9875;&#xFF0C;&#x4E5F;&#x4E0D;&#x628A;&#x4F60;&#x7684;&#x996E;&#x98DF;&#x5386;&#x53F2;&#x53D8;&#x6210;&#x5E73;&#x53F0;&#x8D44;&#x4EA7;&#x3002;
+          &#x56FE;&#x7247;&#x53EA;&#x7528;&#x4E8E;&#x5F53;&#x6B21;&#x8BC6;&#x522B;&#xFF0C;&#x8BB0;&#x5F55;&#x4FDD;&#x5B58;&#x5728;&#x672C;&#x5730;&#xFF0C;&#x63A7;&#x5236;&#x6743;&#x7559;&#x5728;&#x4F60;&#x624B;&#x91CC;&#x3002;
+        </p>
+      </div>
+
+      <div class="story-panel panel-privacy" aria-hidden="true" data-reveal="panel" style="--reveal-delay: 120ms;">
+        <div class="privacy-column">
+          <p>Local first</p>
+          <strong>&#x4F60;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x53EA;&#x5C5E;&#x4E8E;&#x4F60;&#x81EA;&#x5DF1;&#x3002;</strong>
+        </div>
+        <ul class="privacy-list">
+          <li>&#x4E0D;&#x5F3A;&#x5236;&#x6CE8;&#x518C;</li>
+          <li>&#x4E0D;&#x4E0A;&#x4F20;&#x996E;&#x98DF;&#x7167;&#x7247;</li>
+          <li>&#x4E0D;&#x628A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x5F53;&#x4F5C;&#x5E73;&#x53F0;&#x589E;&#x957F;&#x7D20;&#x6750;</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="manifesto" data-reveal="manifesto">
+      <p class="manifesto-line">
+        &#x7B80;&#x7EA6;&#x4E0D;&#x662F;&#x5C11;&#x505A;&#xFF0C;&#x800C;&#x662F;&#x628A;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5E72;&#x6270;&#x5168;&#x90E8;&#x62FF;&#x6389;&#x3002;
+      </p>
+      <p class="manifesto-copy">
+        CalFit &#x60F3;&#x505A;&#x7684;&#x4E0D;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x201C;&#x5065;&#x5EB7;&#x5E73;&#x53F0;&#x201D;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x6B3E;&#x4F60;&#x613F;&#x610F;&#x957F;&#x671F;&#x7559;&#x5728;&#x624B;&#x673A;&#x91CC;&#x7684;&#x8BB0;&#x5F55;&#x5DE5;&#x5177;&#x3002;
+      </p>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-shell" data-reveal="download-shell">
+        <div class="download-copy">
+          <p class="section-kicker">Download</p>
+          <h2>CalFit Beta is now available for Android.</h2>
+          <p>
+          Download the current Android beta directly from GitHub Releases. iOS and HarmonyOS
+          stay in the roadmap and continue to follow the same product direction and visual
+          language.
+          </p>
+
+          <div class="cta-group cta-group-download">
+            <a
+              class="button button-primary"
+              href="https://github.com/wcccc-eng/calfit/releases/download/v0.1.0-beta/CalFit-android-debug-2026-07-06.apk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Android APK
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/wcccc-eng/calfit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Project Updates
+            </a>
+          </div>
+
+          <p class="download-note">
+            Android beta is live now. iOS, HarmonyOS, and broader store distribution will follow
+            after native packaging and signing are finalized.
+          </p>
+        </div>
+
+        <div class="download-card" aria-hidden="true">
+          <div class="qr-frame">
+            <div class="qr-grid">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <p>Official site: wcccc-eng.github.io/calfit</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell" data-reveal="footer">
+      <div>
+        <p class="footer-brand">CalFit</p>
+        <p class="footer-copy">A quieter way to track calories.</p>
+      </div>
+
+      <div class="footer-links" aria-label="&#x9875;&#x811A;&#x8BF4;&#x660E;">
+        <a href="https://github.com/wcccc-eng/calfit/releases" target="_blank" rel="noreferrer">Android APK</a>
+        <span>iOS Soon</span>
+        <span>HarmonyOS Soon</span>
+        <a href="https://github.com/wcccc-eng/calfit" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const body = document.body;
+      const header = document.querySelector(".site-header");
+      const stage = document.querySelector(".hero-stage");
+      const revealItems = document.querySelectorAll("[data-reveal]");
+
+      const setHeaderState = () => {
+        if (!header) return;
+        header.classList.toggle("is-scrolled", window.scrollY > 12);
+      };
+
+      const resetStage = () => {
+        if (!stage) return;
+        stage.style.setProperty("--tilt-x", "0deg");
+        stage.style.setProperty("--tilt-y", "0deg");
+        stage.style.setProperty("--float-x", "0px");
+        stage.style.setProperty("--float-y", "8px");
+        stage.style.setProperty("--glow-x", "50%");
+        stage.style.setProperty("--glow-y", "50%");
+      };
+
+      const updateStage = (event) => {
+        if (!stage || window.matchMedia("(max-width: 1080px)").matches) return;
+        const rect = stage.getBoundingClientRect();
+        const px = (event.clientX - rect.left) / rect.width;
+        const py = (event.clientY - rect.top) / rect.height;
+        const tiltX = (px - 0.5) * 6;
+        const tiltY = (py - 0.5) * -5;
+        const floatX = (px - 0.5) * 18;
+        const floatY = (py - 0.5) * 12 + 8;
+
+        stage.style.setProperty("--tilt-x", tiltX.toFixed(2) + "deg");
+        stage.style.setProperty("--tilt-y", tiltY.toFixed(2) + "deg");
+        stage.style.setProperty("--float-x", floatX.toFixed(2) + "px");
+        stage.style.setProperty("--float-y", floatY.toFixed(2) + "px");
+        stage.style.setProperty("--glow-x", (px * 100).toFixed(2) + "%");
+        stage.style.setProperty("--glow-y", (py * 100).toFixed(2) + "%");
+      };
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        }, {
+          threshold: 0.16,
+          rootMargin: "0px 0px -8% 0px"
+        });
+
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+
+      window.addEventListener("scroll", setHeaderState, { passive: true });
+      window.addEventListener("resize", resetStage);
+      stage?.addEventListener("pointermove", updateStage);
+      stage?.addEventListener("pointerleave", resetStage);
+
+      body.classList.add("is-ready");
+      setHeaderState();
+      resetStage();
+    })();
+  </script>
+</body>
+</html>
