@@ -13,7 +13,7 @@
   --accent-soft: rgba(87, 211, 111, 0.14);
   --warm: #ffb357;
   --warm-soft: rgba(255, 179, 87, 0.16);
-  --shadow-soft: 0 18px 60px rgba(15, 15, 18, 0.08);
+  --landing-shadow-soft: 0 18px 60px rgba(15, 15, 18, 0.08);
   --shadow-float: 0 30px 120px rgba(15, 15, 18, 0.12);
   --shadow-device: 0 44px 120px rgba(15, 15, 18, 0.18);
   --ease-smooth: cubic-bezier(0.22, 0.84, 0.24, 1);
@@ -85,7 +85,7 @@ span {
   padding: 12px 16px;
   border-radius: 14px;
   background: #fff;
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--landing-shadow-soft);
 }
 
 .skip-link:focus {
@@ -731,7 +731,7 @@ h1 {
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--landing-shadow-soft);
   backdrop-filter: blur(18px);
   font-size: 0.82rem;
   color: var(--text-secondary);
@@ -919,7 +919,7 @@ h2 {
     radial-gradient(circle at 86% 24%, rgba(255, 179, 87, 0.15), transparent 24%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(242, 243, 238, 0.98) 100%);
   border: 1px solid rgba(255, 255, 255, 0.78);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--landing-shadow-soft);
   transition:
     transform 340ms var(--ease-smooth),
     box-shadow 340ms var(--ease-smooth),
